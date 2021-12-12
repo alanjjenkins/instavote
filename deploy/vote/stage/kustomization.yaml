@@ -1,12 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../base
+  - ../base
 
-patchesJson6902:
-  - target:
-      group: apps
-      version: v1
-      kind: Deployment
-      name: vote
-    path: vote-patch.yml
+patchesStrategicMerge:
+  - deployment.yaml
+  - service.yaml
