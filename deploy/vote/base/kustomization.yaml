@@ -5,6 +5,5 @@ resources:
 - service.yaml
 configMapGenerator:
   - name: vote-options
+    namespace: instavote
     env: options.env
-    options:
-      disableNameSuffixHash: true
