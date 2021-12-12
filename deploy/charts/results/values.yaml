@@ -7,8 +7,6 @@ replicaCount: 1
 image:
   repository: schoolofdevops/vote-result
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
 
 imagePullSecrets: []
 nameOverride: ""
@@ -37,8 +35,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+  port: 33000
 
 ingress:
   enabled: false
