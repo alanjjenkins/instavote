@@ -3,3 +3,8 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
+configMapGenerator:
+  - name: vote-options
+    env: options.env
+    options:
+      disableNameSuffixHash: true
