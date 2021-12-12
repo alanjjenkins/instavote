@@ -14,5 +14,9 @@ spec:
   interval: 1m0s
   releaseName: postgres
   targetNamespace: instavote
-  values: {}
+  values:
+    service:
+      name: db
+    settings:
+      authMethod: trust
 
