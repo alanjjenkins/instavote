@@ -17,7 +17,7 @@ spec:
         app: vote
     spec:
       containers:
-      - image: schoolofdevops/vote:v5
+      - image: schoolofdevops/vote:v6
         name: vote
         envFrom:
           - configMapRef:
