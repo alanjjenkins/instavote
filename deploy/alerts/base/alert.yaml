@@ -8,7 +8,11 @@ spec:
   eventSeverity: info
   eventSources:
   - kind: Kustomization
-    name: flux-system
+    name: '*'
+  - kind: GitRepository
+    name: '*'
+  - kind: HelmRelease
+    name: '*'
   providerRef:
     name: slack
 
