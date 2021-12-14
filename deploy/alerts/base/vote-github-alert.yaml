@@ -8,7 +8,6 @@ spec:
   eventSeverity: info
   eventSources:
   - kind: Kustomization
-    name: vote
+    name: instavote
   providerRef:
     name: github-instavote
-
