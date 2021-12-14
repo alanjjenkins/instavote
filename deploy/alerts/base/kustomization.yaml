@@ -3,5 +3,7 @@ kind: Kustomization
 resources:
 - alert.yaml
 - github-provider.yaml
+- monitoring-gitrepository.yaml
+- monitoring-kustomization.yaml
 - slack-provider.yaml
 - vote-github-alert.yaml
