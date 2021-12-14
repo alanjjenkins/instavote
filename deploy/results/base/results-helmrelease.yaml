@@ -12,7 +12,6 @@ spec:
         kind: GitRepository
         name: instavote
         namespace: flux-system
-    interval: 1m
-    releaseName: results
-    targetNamespace: instavote
-
+  interval: 1m
+  releaseName: results
+  targetNamespace: instavote
