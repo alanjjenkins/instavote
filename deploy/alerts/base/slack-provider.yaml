@@ -1,0 +1,12 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: slack
+  namespace: flux-system
+spec:
+  channel: home-k8s
+  secretRef:
+    name: flux-slack-webhook
+  type: slack
+
